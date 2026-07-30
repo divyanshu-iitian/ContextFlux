@@ -1,0 +1,44 @@
+[
+  {
+    "id": "code2test-budget",
+    "task": "Add regression tests for exact context token-budget enforcement in src/engine.ts",
+    "intent": "code2test",
+    "goldFiles": ["test/engine.test.ts"],
+    "budgetTokens": 3000
+  },
+  {
+    "id": "trace-budget-validation",
+    "task": "ContextFlux: budgetTokens must be an integer between 256 and 100000 at src/engine.ts",
+    "intent": "trace2code",
+    "goldFiles": ["src/engine.ts"],
+    "budgetTokens": 2500
+  },
+  {
+    "id": "ripple-relation-model",
+    "task": "Show the blast radius of changing FileRelation in src/types.ts",
+    "intent": "edit2ripple",
+    "goldFiles": ["src/graph.ts", "src/indexer.ts", "src/retrieval.ts"],
+    "budgetTokens": 4000
+  },
+  {
+    "id": "review-cache-version",
+    "task": "Address review feedback about validating the cached index version in src/store.ts",
+    "intent": "comment2context",
+    "goldFiles": ["src/store.ts", "src/types.ts"],
+    "budgetTokens": 3000
+  },
+  {
+    "id": "explore-mcp-context",
+    "task": "Explain how MCP exposes task context and repository retrieval",
+    "intent": "explore",
+    "goldFiles": ["src/mcp.ts", "src/engine.ts"],
+    "budgetTokens": 4000
+  },
+  {
+    "id": "code2test-import-graph",
+    "task": "Add regression coverage for JavaScript imports resolving to TypeScript source in src/graph.ts",
+    "intent": "code2test",
+    "goldFiles": ["test/engine.test.ts"],
+    "budgetTokens": 3000
+  }
+]

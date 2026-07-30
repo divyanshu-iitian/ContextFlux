@@ -1,0 +1,4 @@
+interface:
+  display_name: "ContextFlux"
+  short_description: "Retrieve precise code context with fewer tokens"
+  default_prompt: "Use $context-efficient-coding to gather a compact context packet before editing this codebase."

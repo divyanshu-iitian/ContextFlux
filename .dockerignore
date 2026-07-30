@@ -1,0 +1,9 @@
+.git
+.github
+.contextflux
+node_modules
+dist
+coverage
+test
+benchmarks
+*.log

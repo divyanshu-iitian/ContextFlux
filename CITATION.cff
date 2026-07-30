@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use ContextFlux in research, please cite this software."
+title: "ContextFlux: task-adaptive repository context for coding agents"
+type: software
+authors:
+  - given-names: Divyanshu
+    family-names: Mishra
+    alias: divyanshu-iitian
+repository-code: "https://github.com/divyanshu-iitian/ContextFlux"
+url: "https://github.com/divyanshu-iitian/ContextFlux"
+license: MIT
+version: 0.1.0
+date-released: 2026-07-30

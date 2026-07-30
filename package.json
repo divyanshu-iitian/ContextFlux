@@ -1,0 +1,73 @@
+{
+  "name": "contextflux",
+  "version": "0.1.0",
+  "description": "Task-adaptive repository context engine for coding agents, with exact token budgets and local dependency evidence.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "contextflux": "./dist/cli.js",
+    "contextflux-mcp": "./dist/mcp.js"
+  },
+  "mcpName": "io.github.divyanshu-iitian/contextflux",
+  "files": [
+    "dist",
+    "skills",
+    "integrations",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "benchmark:smoke": "npm run build && node dist/cli.js benchmark benchmarks/self.json --root . --json",
+    "prepare": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "coding-agents",
+    "codebase-context",
+    "token-optimization",
+    "mcp-server",
+    "code-search",
+    "agentic-retrieval",
+    "context-engineering",
+    "rag",
+    "repo-map",
+    "llm"
+  ],
+  "author": "Divyanshu <divyanshu-iitian@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshu-iitian/ContextFlux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/divyanshu-iitian/ContextFlux/issues"
+  },
+  "homepage": "https://github.com/divyanshu-iitian/ContextFlux#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "gpt-tokenizer": "^3.4.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@vitest/coverage-v8": "^4.1.10",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
